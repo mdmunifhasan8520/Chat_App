@@ -126,6 +126,10 @@
                                 <state key="normal" title="Log In">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="logInPressed:" destination="Soh-Ah-pi6" eventType="touchUpInside" id="aKE-j0-wX0"/>
+                                    <segue destination="cQn-S9-Nkq" kind="show" identifier="goToChat" id="wRF-bv-aln"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="geT-Et-dez">
                                 <rect key="frame" x="35" y="98" width="324" height="40"/>
@@ -139,15 +143,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="YoO-cf-SXx"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextfield" destination="geT-Et-dez" id="Iac-mJ-T6e"/>
+                        <outlet property="passwordTextfield" destination="aLY-Aa-ufp" id="Lgf-rF-AcV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Uu-N8-pum" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1938" y="-360"/>
         </scene>
-        <!--View Controller-->
+        <!--Chat Screen View Controller-->
         <scene sceneID="Lbu-kN-nhQ">
             <objects>
-                <viewController id="cQn-S9-Nkq" sceneMemberID="viewController">
+                <viewController id="cQn-S9-Nkq" customClass="ChatScreenViewController" customModule="Chat_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nMt-dA-dlk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -172,6 +180,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="log out"/>
+                                <connections>
+                                    <action selector="logOutPressed:" destination="cQn-S9-Nkq" eventType="touchUpInside" id="rcN-vI-u4S"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HHy-P6-gph">
                                 <rect key="frame" x="16" y="602" width="279" height="40"/>
@@ -186,15 +197,23 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="send"/>
+                                <connections>
+                                    <action selector="sendPressed:" destination="cQn-S9-Nkq" eventType="touchUpInside" id="Rgc-LF-QN2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="YjO-bW-BRJ"/>
                     </view>
+                    <connections>
+                        <outlet property="messageTableView" destination="xZq-6r-L4j" id="NTq-7f-upt"/>
+                        <outlet property="messageTextfield" destination="HHy-P6-gph" id="b5N-dy-VcN"/>
+                        <outlet property="sendButton" destination="vpZ-uY-Oe6" id="UfS-SB-nW8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QvV-J9-uLR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3088.8000000000002" y="105.69715142428787"/>
+            <point key="canvasLocation" x="3164" y="206"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Hb0-1b-WXB">
@@ -215,4 +234,7 @@
             <point key="canvasLocation" x="175" y="106"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="wRF-bv-aln"/>
+    </inferredMetricsTieBreakers>
 </document>

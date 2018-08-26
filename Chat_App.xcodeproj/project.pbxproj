@@ -16,6 +16,9 @@
 		FAE4BCA321328F720075160B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE4BCA221328F710075160B /* RegisterViewController.swift */; };
 		FAE4BCA521328F8F0075160B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE4BCA421328F8F0075160B /* LogInViewController.swift */; };
 		FAE4BCA721328FE20075160B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE4BCA621328FE20075160B /* WelcomeViewController.swift */; };
+		FAE4BCA92132BA3B0075160B /* ChatScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE4BCA82132BA3B0075160B /* ChatScreenViewController.swift */; };
+		FAE4BCAB2132CAE40075160B /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE4BCAA2132CAE30075160B /* CustomMessageCell.swift */; };
+		FAE4BCAD2132CAED0075160B /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE4BCAC2132CAED0075160B /* MessageCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		FAE4BCA221328F710075160B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		FAE4BCA421328F8F0075160B /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		FAE4BCA621328FE20075160B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		FAE4BCA82132BA3B0075160B /* ChatScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreenViewController.swift; sourceTree = "<group>"; };
+		FAE4BCAA2132CAE30075160B /* CustomMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
+		FAE4BCAC2132CAED0075160B /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,15 +90,18 @@
 		FAE281CE2130625C0086BE73 /* Chat_App */ = {
 			isa = PBXGroup;
 			children = (
+				FAE4BCAA2132CAE30075160B /* CustomMessageCell.swift */,
+				FAE4BCAC2132CAED0075160B /* MessageCell.xib */,
 				FAE281CF2130625C0086BE73 /* AppDelegate.swift */,
-				FAE4BCA621328FE20075160B /* WelcomeViewController.swift */,
 				FAE281D32130625C0086BE73 /* Main.storyboard */,
 				FAE281D62130625D0086BE73 /* Assets.xcassets */,
 				FAE281D82130625D0086BE73 /* LaunchScreen.storyboard */,
 				FAE281DB2130625D0086BE73 /* Info.plist */,
 				FAE281E1213063290086BE73 /* GoogleService-Info.plist */,
+				FAE4BCA621328FE20075160B /* WelcomeViewController.swift */,
 				FAE4BCA221328F710075160B /* RegisterViewController.swift */,
 				FAE4BCA421328F8F0075160B /* LogInViewController.swift */,
+				FAE4BCA82132BA3B0075160B /* ChatScreenViewController.swift */,
 			);
 			path = Chat_App;
 			sourceTree = "<group>";
@@ -157,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE4BCAD2132CAED0075160B /* MessageCell.xib in Resources */,
 				FAE281DA2130625D0086BE73 /* LaunchScreen.storyboard in Resources */,
 				FAE281E2213063290086BE73 /* GoogleService-Info.plist in Resources */,
 				FAE281D72130625D0086BE73 /* Assets.xcassets in Resources */,
@@ -220,6 +230,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE4BCAB2132CAE40075160B /* CustomMessageCell.swift in Sources */,
+				FAE4BCA92132BA3B0075160B /* ChatScreenViewController.swift in Sources */,
 				FAE4BCA521328F8F0075160B /* LogInViewController.swift in Sources */,
 				FAE4BCA721328FE20075160B /* WelcomeViewController.swift in Sources */,
 				FAE4BCA321328F720075160B /* RegisterViewController.swift in Sources */,
