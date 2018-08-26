@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		0E20E6F9C4FE71543B8ACFB2 /* Pods_Chat_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C93A3D86301A1606D9228DB /* Pods_Chat_App.framework */; };
 		FAE281D02130625C0086BE73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE281CF2130625C0086BE73 /* AppDelegate.swift */; };
-		FAE281D22130625C0086BE73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE281D12130625C0086BE73 /* ViewController.swift */; };
 		FAE281D52130625C0086BE73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE281D32130625C0086BE73 /* Main.storyboard */; };
 		FAE281D72130625D0086BE73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE281D62130625D0086BE73 /* Assets.xcassets */; };
 		FAE281DA2130625D0086BE73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE281D82130625D0086BE73 /* LaunchScreen.storyboard */; };
 		FAE281E2213063290086BE73 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAE281E1213063290086BE73 /* GoogleService-Info.plist */; };
+		FAE4BCA321328F720075160B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE4BCA221328F710075160B /* RegisterViewController.swift */; };
+		FAE4BCA521328F8F0075160B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE4BCA421328F8F0075160B /* LogInViewController.swift */; };
+		FAE4BCA721328FE20075160B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE4BCA621328FE20075160B /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +24,14 @@
 		A4CE10F5294F58F13ABBA465 /* Pods-Chat_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat_App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chat_App/Pods-Chat_App.debug.xcconfig"; sourceTree = "<group>"; };
 		FAE281CC2130625C0086BE73 /* Chat_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE281CF2130625C0086BE73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAE281D12130625C0086BE73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAE281D42130625C0086BE73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAE281D62130625D0086BE73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAE281D92130625D0086BE73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAE281DB2130625D0086BE73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAE281E1213063290086BE73 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FAE4BCA221328F710075160B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		FAE4BCA421328F8F0075160B /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		FAE4BCA621328FE20075160B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,12 +85,14 @@
 			isa = PBXGroup;
 			children = (
 				FAE281CF2130625C0086BE73 /* AppDelegate.swift */,
-				FAE281D12130625C0086BE73 /* ViewController.swift */,
+				FAE4BCA621328FE20075160B /* WelcomeViewController.swift */,
 				FAE281D32130625C0086BE73 /* Main.storyboard */,
 				FAE281D62130625D0086BE73 /* Assets.xcassets */,
 				FAE281D82130625D0086BE73 /* LaunchScreen.storyboard */,
 				FAE281DB2130625D0086BE73 /* Info.plist */,
 				FAE281E1213063290086BE73 /* GoogleService-Info.plist */,
+				FAE4BCA221328F710075160B /* RegisterViewController.swift */,
+				FAE4BCA421328F8F0075160B /* LogInViewController.swift */,
 			);
 			path = Chat_App;
 			sourceTree = "<group>";
@@ -166,15 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Chat_App-checkManifestLockResult.txt",
 			);
@@ -188,8 +190,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Chat_App/Pods-Chat_App-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
@@ -200,8 +200,6 @@
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
@@ -222,7 +220,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAE281D22130625C0086BE73 /* ViewController.swift in Sources */,
+				FAE4BCA521328F8F0075160B /* LogInViewController.swift in Sources */,
+				FAE4BCA721328FE20075160B /* WelcomeViewController.swift in Sources */,
+				FAE4BCA321328F720075160B /* RegisterViewController.swift in Sources */,
 				FAE281D02130625C0086BE73 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
